@@ -1,0 +1,182 @@
+body{
+    background-image: url(../recursos/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    cursor: url(../recursos/img/cursores/default.cur), auto;
+}
+.cambioCursorLink{
+    cursor: url(../recursos/img/cursores/click.cur), pointer;
+}
+.menuColor{
+    background-color:rgba(86, 86, 86, 0.468);
+}
+.menuColorSin{
+    background-color:rgba(86, 86, 86, 1);
+}
+footer ul{
+    background-color:rgba(86, 86, 86, 0.468);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    list-style: none;
+    font-size: 15px;
+}
+/*main general*/
+main{
+    height: auto;
+    background-color:rgba(52, 52, 52, 0.8);
+    border-radius: 10px;
+}
+/*Para celulares desde 320px*/
+/*Parametros generales*/
+header nav{
+    text-align: center;
+}
+.logo img{
+    height: 80%;
+    width: 80%;
+    filter: drop-shadow(0 0 2px blue);
+}
+.contenedorMainContacto{
+    height: 80vh;
+}
+/*Parametros index*/
+.contenedorMain{
+    height: 80vh;
+}
+.fotoContenedor{
+    width: 100%;
+    height: 100%;
+}
+/*Parametros avisos*/
+.contenedorMainAviso{
+    height: auto;
+}
+.videoS{
+    margin: auto;
+}
+.videoS video{
+    width: 100%;
+    height: 100%;
+}
+.textoAvisos{
+    height: 100vh;
+}
+/*Parametros items/rangos */
+/*Uso de !important por que la funcion card-body incluye un fondo y para hacer uso del complemento remplazo el color que necesito en la web*/
+.itemColor{
+    background-color:rgba(77, 74, 74, 0.829) !important;
+    margin-left: 25px;
+}
+.lista{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+}
+.cubeImg:hover{
+    transform: scale(1.15);
+    transition: 1s;
+}
+/*Parametros contacto*/
+.redes{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.redes li button{
+    border: none;
+    background: none;
+}
+.imgContacto{
+    height: 64px;
+    width: 64px;
+}
+.imgContacto:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+/*Para tablet desde 600px*/
+/**/
+@media  screen and (min-width:600px) {
+    .logo img{
+        height: 40%;
+        width: 40%;
+        filter: drop-shadow(0 0 2px blue);
+    }
+    .contenedorMainContacto{
+        height: 80vh;
+    }
+    .contenedorMain{
+        height: 100vh;
+    }
+    /*Parametros avisos*/
+    .videoS{
+        margin: auto;
+    }
+    .videoS video{
+        width: 100%;
+        height: 100%;
+    }
+    .mainMenu{
+        height: auto;
+        background-color:rgba(52, 52, 52, 0.468);
+        border-radius: 10px;
+    }
+    /*Parametros contacto*/
+    .imgContacto{
+        height: 128px;
+        width: 128px;
+        margin-bottom: 50x;
+    }
+}
+
+/*Parametros pantalla grande*/
+@media  screen and (min-width:1024px) {
+    .logo img{
+        height: 20%;
+        width: 20%;
+        filter: drop-shadow(0 0 2px blue);
+    }
+    footer ul{
+        background-color:rgba(86, 86, 86, 0.468);
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .contenedorMain{
+        height: auto;
+    }
+    .contenedorMainContacto{
+        height: 85vh;
+    }
+    /*Parametros index*/
+    .fotoContenedor{
+        height: 80%;
+        width: 80%;
+        margin: auto;
+    }
+    /*Parametros avisos*/
+    .videoS{
+        width: 70%;
+        height: 70%;
+    }
+    /*Parametros contacto*/
+    .redes{
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        justify-content: space-evenly;
+        margin-top: 35px;
+    }
+}
